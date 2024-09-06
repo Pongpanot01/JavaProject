@@ -1,11 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Car myCar = new Car("Toyota", 2002);
-        myCar.displayInfo();
+        Circle circle = new Circle("Red", 12);
+        System.out.println("Color: " + circle.getColor());
+        System.out.println("Radius: "+ circle.getRadius());
+        System.out.println("Area: "+ circle.area());
 
-        myCar.setBrand("Honda");
-        myCar.setYear(1999);
-
-        myCar.displayInfo();
+        Rectangle rectangle = new Rectangle("Grey", 12, 15);
+        System.out.println("Color: " + rectangle.getColor());
+        System.out.println("Width: " + rectangle.getWidth());
+        System.out.println("Height: " + rectangle.getHeight());
+        System.out.println("Area: "+ rectangle.area());
     }
 }
